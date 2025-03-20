@@ -1,0 +1,85 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.filter-container {
+  position: absolute;
+  background-color: white;
+  padding: 1rem;
+  right: 0;
+  border-radius: 0.5rem;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+  width: 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align the items to the left */
+  justify-content: flex-start; /* Align the content to the top */
+  z-index: 99;
+}
+
+.title {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.range-container {
+  width: 100%;
+}
+
+.range-input {
+  width: 100%;
+}
+
+.range-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+}
+
+.price-label {
+  color: rgb(79, 209, 107); /* Teal color */
+}
+
+.filter-section {
+  margin-bottom: 5%;
+}
+
+.section-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.checkbox-container {
+  height: 30px;
+  align-items: center;
+}
+
+.checkbox {
+  margin-right: 0.5rem;
+}
+
+.checkbox-label {
+  font-size: 0.875rem;
+}
+
+.filter-button {
+  background-color: rgba(27, 255, 84, 0.8);
+  color:  rgb(0, 0, 0);
+  font-weight: bold;
+  height: 40px;
+  border-radius: 0.5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filter-icon {
+  margin-right: 0.5rem;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}

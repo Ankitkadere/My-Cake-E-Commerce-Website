@@ -1,0 +1,108 @@
+/* Global Navbar Styling */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+  .StickyNav {
+  height: auto;
+  position: sticky;
+  top: 0px;
+  left: 0px; 
+  width: 100%;
+  z-index: 100;
+}
+.navbar-custom {
+  background-color: #f8f9fa; /* Light background */
+  padding: 0px; /* Adequate padding */
+  font-size: 14px; /* Base font size */
+  border-radius: 8px; /* Rounded corners for a soft look */
+  margin: 0px 25px;
+  border-radius: 20px;
+}
+
+/* Navbar Brand (Home Link) */
+.navbar-brand {
+  font-size: 18px;
+  margin-left: 5%;
+  border-radius: 20px;
+  font-weight: 600; /* Bold and professional weight */
+  color: #333; /* Dark text color */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease; /* Smooth transition on hover */
+}
+
+.navbar-brand:hover {
+  color: #007bff; /* Change color on hover */
+}
+
+/* Navbar Toggler (Hamburger Icon) for Mobile */
+.navbar-toggler-icon {
+  border-radius: 4px; /* Rounded corners for the icon */
+}
+
+/* Navbar Links */
+.nav-link {
+  width: 100px;
+  color: black; /* Default link color */
+  padding: 0px 10px; /* Adequate padding for links */
+  text-decoration: none; /* Remove underline */
+  margin: 0px 10px;
+  border-radius: 20px;
+  text-align: center;
+  transition: color 0.3s ease, background-color 0.3s ease; /* Smooth hover transitions */
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: rgb(255, 255, 255); /* Blue color on hover */
+  background-color: rgba(0, 123, 255, 0.92); /* Subtle background highlight */
+  border-radius: 20px; /* Rounded corners on hover */
+}
+
+/* Dropdown Menu Styling */
+.nav-dropdown-menu {
+  background-color: #fff; /* Clean white background */
+  border-radius: 6px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for dropdown */
+  border: 1px solid #ddd; /* Light border for separation */
+}
+
+/* Dropdown Items */
+.nav-dropdown-item {
+  padding: 8px 15px; /* Adequate padding for dropdown items */
+  color: #333; /* Default color */
+  font-size: 14px; /* Slightly smaller font size for dropdown items */
+  transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+.nav-dropdown-item:hover,
+.nav-dropdown-item:focus {
+  background-color: #f1f1f1; /* Light gray on hover */
+  color: #007bff; /* Blue color on hover */
+  border-radius: 4px; /* Rounded corners */
+}
+h6 {
+  margin: 0px 20px;
+  color:rgb(0, 0, 0);
+}
+/* Dropdown Divider */
+.nav-dropdown-divider {
+  margin: 8px 0; /* Add space between divider and items */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 992px) {
+  .navbar-custom {
+    padding: 12px 15px; /* Adjust padding for mobile screens */
+  }
+
+  .navbar-collapse {
+    background-color: #f8f9fa; /* Match background when collapsed */
+    padding: 10px 0; /* Padding inside the collapsed navbar */
+  }
+
+  .nav-link {
+    padding: 8px 12px; /* Adjust padding for smaller screens */
+    font-size: 15px; /* Slightly smaller font for mobile */
+  }
+}

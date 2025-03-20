@@ -1,0 +1,99 @@
+/* Global margin and padding reset for better control */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensures elements take their border and padding into account in width/height calculations */
+}
+
+body {
+  font-family: Arial, sans-serif; /* You can change this to your preferred font */
+}
+
+/* Container for the main card */
+.card-container {
+  display: flex; /* Flexbox for horizontal layout */
+  justify-content: center; /* Center the cards horizontally */
+  gap: 15px; /* Gap between cards */
+  flex-wrap: wrap; /* Allows wrapping when space is limited */
+}
+
+/* Style for individual card containers */
+.bigbox {
+  width: 100%;
+  height: auto;
+  display: flex; /* Flexbox for card structure */
+  flex-direction: column; /* Stack image and content vertically */
+  justify-content: space-between;
+  padding: 5px;
+  gap: 10px;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Styling for the image container */
+.bogetimg {
+  margin: 2%;
+}
+
+/* Hover effect on the card */
+.boget:hover {
+  transform: scale(1.05); /* Subtle zoom effect when hovered */
+  transition: transform 0.3s ease;
+}
+
+/* Style for the image inside the card */
+
+/* Card body styling */
+.boget .card-body {
+  padding: 1rem; /* Padding inside the card body */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 330px; /* Fixed height for the content area */
+}
+
+/* Card Title */
+.boget .card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+/* Card Text */
+.boget .card-text {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+  flex-grow: 1; /* Allow the text to take up remaining space */
+}
+
+/* Button styling */
+.boget .btn-primary {
+  width: 50%;
+  background-color: rgb(234, 255, 241);
+  color: rgb(0, 255, 76);
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.boget .btn-primary:hover {
+  background-color: rgb(127, 212, 138);
+  color:white;
+  transform: scale(1.02);
+}
+
+/* Adjust layout for larger screens */
+@media (min-width: 768px) {
+  .card-container {
+    gap: 20px; /* Increased gap for larger screens */
+  }
+
+  .bigbox {
+    width: 30%; /* Limit card width on larger screens */
+  }
+}

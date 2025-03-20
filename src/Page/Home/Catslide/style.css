@@ -1,0 +1,153 @@
+/* General container for all cards */
+.cardtype {
+  display: flex;
+   /* Allow horizontal scrolling */
+  padding: 5px 0; /* Add some padding for better spacing */
+  gap: 7px; /* Space between each card */
+  scroll-snap-type: none; /* Enable snapping behavior on scroll */
+  touch-action: pan-x; /* Allows touch scrolling horizontally */
+  z-index: 99999px;
+  margin-top:-3%;
+ 
+}
+ 
+/* Hide scrollbar for clean look */
+.cardtype::-webkit-scrollbar {
+  display: none; /* Hides the scrollbar for a clean look */
+}
+
+/* Add smooth scroll behavior for better experience */
+.cardtype {
+  scroll-behavior: smooth;
+}
+
+/* Optional: Adding scroll-snap behavior to each card */
+.cardtype > .card {
+  scroll-snap-align: start; /* Cards will align to the start of the scroll */
+}
+
+/* Card container styling */
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  min-width: 100px; /* Minimum width of cards */
+  margin: 1px 0;
+  scroll-snap-align: start; /* Ensure cards align well when scrolling */
+  flex-shrink: 0; /* Prevent cards from shrinking */
+}
+
+/* Hover effect for the card */
+.card:hover {
+  transform: translateY(-6px); /* Slight lift on hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Card image styling */
+.card img {
+  width: 100%;
+  height: 100px; /* Fixed height for image consistency */
+  object-fit: cover;
+  border-bottom: 2px solid #f1f1f1; /* Subtle border at the bottom */
+  border-radius: 12px 12px 0 0; /* Rounded corners for the image */
+}
+
+/* Container for text content */
+.container {
+  text-align: center;
+  padding: 10px;
+}
+
+/* Name styling */
+.container h4 {
+  font-size: 16px;
+  font-weight: 600; /* Semi-bold font for names */
+  color: #333;
+  margin: 16px 0 8px; /* Spacing between the name and profession */
+  text-transform: capitalize; /* Capitalize the first letter */
+}
+
+/* Profession styling */
+.container p {
+  font-size: 12px;
+  color: #777; /* Lighter color for profession text */
+  margin-top: 8px;
+  font-weight: 400;
+  line-height: 1.5; /* Proper line-height for readability */
+}
+
+.cardtype .card:nth-child(odd) {
+  background: rgb(236, 211, 215);
+}
+
+.cardtype .card:nth-child(even) {
+  background-color: #e5f6df;
+}
+
+.card-slider {
+ 
+  position: relative;
+  width: 96%;
+  margin: 0 auto;
+  margin-top:-16%;
+  overflow: hidden;
+}
+
+.cardtype {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+ .cardtype .card {
+  min-width: 10%; /* Each card will take up 10% of the container width */
+  margin: 10px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+ .arroesbutton
+ {
+  font-size:30px;
+  color:rgba(41, 41, 41, 0.49);
+ }
+
+/* Responsive Design: Adjust layout for different screen sizes */
+
+/* Tablet (portrait) screens */
+@media screen and (max-width: 1024px) {
+  .card {
+    width: 240px; /* Slightly smaller cards for tablets */
+  }
+}
+
+/* Mobile devices */
+@media screen and (max-width: 768px) {
+  .card {
+    width: 220px; /* Reduce width for mobile devices */
+  }
+
+  .container h4 {
+    font-size: 18px; /* Slightly smaller text for mobile */
+  }
+
+  .container p {
+    font-size: 12px; /* Reduce font size for readability on small screens */
+  }
+}
+
+/* Very small devices (portrait phones) */
+@media screen and (max-width: 480px) {
+  .card {
+    width: 100%; /* Full-width cards on very small screens */
+    margin: 10px 0; /* Add margin for spacing */
+  }
+}

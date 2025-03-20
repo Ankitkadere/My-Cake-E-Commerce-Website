@@ -1,0 +1,156 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+header {
+  padding: 0;
+  background-color: #f8f9fa;
+}
+.Name {
+  color: black;
+  font-size: 20px;
+  margin-top: 5px;
+}
+.container-fluid {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.row {
+  display: flex;
+  align-items: center;
+}
+.hr {
+  color: black;
+  margin: 0px;
+  padding: 0;
+}
+
+/* Logo */
+.col-sm-2 img {
+  width: 20%;
+  height: auto;
+  display: block;
+  border-radius:50%;
+}
+
+/* Header Search Section */
+.headerSearch {
+  display: flex;
+  align-items: center;
+}
+.selectDrop {
+  margin-right: 15px;
+}
+
+.Search {
+  flex-grow: 1;
+  display: flex;
+}
+
+.Search input {
+  width: 100%;
+  padding: 5px 15px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.Search input::placeholder {
+  color: #888;
+  font-style: italic;
+}
+
+/* Button */
+.selectDrop button {
+  padding: 4px 15px;
+  background-color: transparent;
+  color: black;
+  font-size: 14px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.selectDrop button:hover {
+  background-color: #0056b3;
+}
+/* Container for icons */
+.icons {
+  width: 30%;
+  display: flex;
+  justify-content: space-between; /* Space between the icons */
+  align-items: center; /* Center items vertically */
+  font-size: 30px;
+}
+.icons p {
+  margin-top: 13%;
+}
+
+/* Styling for each anchor tag inside the icons */
+.icons a {
+  display: flex;
+  align-items: center; /* Center icon and text vertically */
+  text-decoration: none; /* Remove underline from links */
+  color: #333; /* Set color of icons and text */
+  padding: 2px 30px;
+  font-size: 20px;
+  border-radius: 20px;
+}
+
+/* Hover effect for links */
+.icons a:hover {
+  color: #007bff; /* Change color on hover */
+}
+
+/* Optional: Adjust icon size */
+.icons svg {
+  margin-right: 5px; /* Space between icon and text */
+}
+.loginacc{
+  font-size:1.3rem;
+  margin-top:-5px;
+  padding:0px;
+}
+ #user-sign-button{
+  padding: 4px 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #38a169;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+/* Mobile responsiveness: Stack items vertically */
+@media (max-width: 768px) {
+  .icons {
+    width: 100%;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+  }
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+  .col-sm-2,
+  .col-sm-5 {
+    width: 100%;
+    text-align: center;
+  }
+  .headerSearch {
+    flex-direction: column;
+  }
+  .Search input {
+    margin-top: 10px;
+  }
+}
